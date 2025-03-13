@@ -475,6 +475,32 @@ button:hover {
   height: auto;
 }
 
+
+#numbers {
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #043a53;
+  display: block;
+}
+
+.number-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+
 /* Desktop-First Brand Hero Section Styles */
 
 .brand-container {
@@ -954,7 +980,7 @@ button:hover {
   }
   #numbers {
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
