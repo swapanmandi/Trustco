@@ -225,8 +225,7 @@ button:hover {
   padding: 1rem 0;
 }
 
-
-.auth-buttons{
+.auth-buttons {
   display: none;
   justify-content: center;
   gap: 3rem;
@@ -240,18 +239,18 @@ button:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.nav.active{
+.nav.active {
   display: block;
 }
 
 .nav-links li {
-  display:block;
+  display: block;
   margin: 0 1rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #12141D;
+  color: #12141d;
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
   font-weight: bold;
@@ -272,14 +271,13 @@ button:hover {
 }
 .signin-btn {
   background-color: white;
-  color: #12141D;
+  color: #12141d;
 }
 
 .signup-btn {
-  background-color: #043A53;
+  background-color: #043a53;
   color: white;
 }
-
 
 .menu-icon-container {
   object-fit: contain;
@@ -291,10 +289,9 @@ button:hover {
 #video-section {
   text-align: center;
   padding: 2rem;
-  background-color:#043A53;
-  ;
+  background-color: #043a53;
 }
-.video-content{
+.video-content {
   display: block;
   width: 100%;
   padding-bottom: 1.5rem;
@@ -304,9 +301,8 @@ button:hover {
   margin-bottom: 1rem;
   color: #f2f5f6;
 }
-.color-title{
-  color: #F0B73F;
-
+.color-title {
+  color: #f0b73f;
 }
 .video-content p {
   font-size: 1.1rem;
@@ -319,15 +315,15 @@ button:hover {
   display: inline-block;
   max-width: 37.5rem;
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 .25rem .6rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 .video-thumbnail img {
   width: 100%;
   display: block;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .play-icon {
@@ -347,12 +343,6 @@ button:hover {
   width: 2.2rem;
   height: 2.2rem;
 }
-
-.video-thumbnail:hover .play-icon img {
-  opacity: 1;
-}
-
-
 
 /* Desktop-First Brand Hero Section Styles */
 
@@ -484,12 +474,18 @@ button:hover {
     width: 100%;
     height: 100%;
   }
-  .nav{
+  .nav {
     display: none;
   }
   .menu-icon-container {
     display: block;
-    
+  }
+  .video-content p {
+    font-size: medium;
+  }
+  .play-icon img {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
@@ -560,96 +556,121 @@ button:hover {
     display: block;
   }
 
-.header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f2f5f6;
-  padding: 1rem;
-  height: 60px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-.logo img {
-  height: 40px;
-}
-.nav{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  width: fit-content;
-  text-align: center;
-  padding: 0;
-}
+  .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f5f6;
+    padding: 1rem;
+    height: 60px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .logo img {
+    height: 40px;
+  }
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: fit-content;
+    text-align: center;
+    padding: 0;
+  }
 
-.nav-links {
-  list-style: none;
-  padding: 0;
-}
+  .nav-links {
+    list-style: none;
+    padding: 0;
+  }
 
-.nav-links li {
-  display: inline-block;
-  margin: 0 1rem;
-}
+  .nav-links li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 
-.nav-links a {
-  text-decoration: none;
-  color: #12141D;
-  font-size: 1rem;
-  transition: color 0.3s ease-in-out;
-  font-weight: bold;
-}
+  .nav-links a {
+    text-decoration: none;
+    color: #12141d;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+  }
 
-.nav-links a:hover {
-  color: #043A53;
-}
+  .nav-links a:hover {
+    color: #043a53;
+  }
 
-.auth-buttons {
-  top: 0;
-  padding: 0;
-  position: relative;
-  width: fit-content;
-  display: flex;
-  background-color: none;
-  box-shadow: none;
-}
+  .auth-buttons {
+    top: 0;
+    padding: 0;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    background-color: none;
+    box-shadow: none;
+  }
 
-.signin-btn,
-.signup-btn {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 12rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
+  .signin-btn,
+  .signup-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 12rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
 
-.signin-btn {
-  background-color: white;
-  color: #12141D;
+  .signin-btn {
+    background-color: white;
+    color: #12141d;
+  }
 
-}
+  .signin-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
 
-.signin-btn:hover {
-  background-color: #007bff;
-  color: white;
-}
+  .signup-btn {
+    background-color: #043a53;
+    color: white;
+  }
 
-.signup-btn {
-  background-color: #043A53;
-  color: white;
-}
+  .signup-btn:hover {
+    background-color: #0056b3;
+  }
+  .menu-icon-container {
+    display: none;
+  }
+  .video-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+  }
+  .video-content p {
+    font-size: large;
+  }
+  .video-thumbnail {
+    max-width: 60rem;
+  }
+  .video-thumbnail img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+  }
 
-.signup-btn:hover {
-  background-color: #0056b3;
-}
-.menu-icon-container {
-  display: none;
-  
-}
+  .play-icon img {
+    width: 3.5rem;
+    height: 3.5rem;
+    opacity: 0.9;
+  }
+
+  .video-thumbnail:hover .play-icon img {
+    opacity: 1;
+  }
 }
