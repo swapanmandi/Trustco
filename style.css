@@ -288,6 +288,69 @@ button:hover {
   height: 2rem;
   width: 2rem;
 }
+#video-section {
+  text-align: center;
+  padding: 2rem;
+  background-color:#043A53;
+  ;
+}
+.video-content{
+  display: block;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+.video-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f2f5f6;
+}
+.color-title{
+  color: #F0B73F;
+
+}
+.video-content p {
+  font-size: 1.1rem;
+  color: #f2f5f6;
+  margin-bottom: 1rem;
+}
+
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  max-width: 37.5rem;
+  width: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 .25rem .6rem rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail img {
+  width: 100%;
+  display: block;
+  border-radius: .5rem;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-icon img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.video-thumbnail:hover .play-icon img {
+  opacity: 1;
+}
 
 
 
