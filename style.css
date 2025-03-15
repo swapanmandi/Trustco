@@ -572,6 +572,116 @@ blockquote {
   height: auto;
 }
 
+#testimonials {
+  display: flex;
+  background-color: #f2f5f6;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.item:nth-child(1) {
+  order: 1;
+}
+.item:nth-child(4) {
+  order: 2;
+}
+.item:nth-child(3) {
+  order: 3;
+}
+.item:nth-child(2) {
+  order: 4;
+}
+
+#testimonials h1 {
+  font-size: 2.5rem;
+}
+.card-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card blockquote {
+  height: 100%;
+}
+.testimonial-card img {
+  width: 1rem;
+  height: 1rem;
+}
+.testimonial-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+.testimonial-info img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.testimonial-details {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+.testimonial-quote {
+  width: 2rem;
+  height: 2rem;
+}
+.see-all-btn {
+  background-color: #f2f5f6;
+  padding: 2rem;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+}
+.see-all-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.carousel-icons {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.icon {
+  width: 0.75rem;
+  height: 0.5rem;
+  border-radius: 10rem;
+  background-color: #6c757d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.carousel-icons .icon:nth-child(2) {
+  background-color: #043a53;
+  width: 3rem;
+  border-radius: 10rem;
+}
+
 /* Desktop-First Brand Hero Section Styles */
 
 .brand-container {
@@ -1102,6 +1212,7 @@ blockquote {
     height: auto;
     margin: 0;
   }
+
   #testimonials {
     background-color: #f2f5f6;
     display: grid;
@@ -1109,77 +1220,40 @@ blockquote {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  #testimonials h1 {
-    font-size: 2.5rem;
+  .item:nth-child(1) {
+    order: 1;
+  }
+  .item:nth-child(2) {
+    order: 2;
+  }
+  .item:nth-child(3) {
+    order: 3;
+  }
+  .item:nth-child(4) {
+    order: 4;
+  }
+
+  .card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 1.5rem;
   }
   .testimonial-card {
-    background-color: white;
     padding: 1.5rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 1.5rem;
   }
-  .testimonial-card blockquote {
-    height: 100%;
-  }
-  .testimonial-card img {
-    width: 1rem;
-    height: 1rem;
-  }
-  .testimonial-info {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    padding-top: 1rem;
-  }
+
   .testimonial-info img {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
   }
-  .testimonial-details {
-    display: flex;
-    flex-direction: column;
-  }
+
   .testimonial-quote {
     width: 3rem;
     height: 3rem;
-  }
-  .see-all-btn {
-    background-color: #f2f5f6;
-    color: black;
-    font-weight: 600;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 1rem;
-  }
-  .see-all-btn img {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .carousel-icons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .icon {
-    width: 0.75rem;
-    height: 0.5rem;
-    border-radius: 10rem;
-    background-color: #6c757d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .carousel-icons .icon:nth-child(2) {
-    background-color: #043a53;
-    width: 3rem;
-    border-radius: 10rem;
   }
 }
