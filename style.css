@@ -908,14 +908,16 @@ blockquote {
   font-size: 0.9rem;
   grid-column-start: 1;
   grid-column-end: 5;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 #copyright {
   font-size: 1rem;
 }
 .credits-links {
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -1182,7 +1184,7 @@ blockquote {
   }
   .credits-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -1609,6 +1611,11 @@ blockquote {
   }
   .footer-nav {
     padding: 0;
+  }
+  #site-credits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
   }
   .credits-links {
     display: flex;
