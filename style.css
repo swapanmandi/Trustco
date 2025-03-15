@@ -399,6 +399,92 @@ button:hover {
   color: black;
 }
 
+#building-bridges{
+  padding: 3rem 1rem;
+  background-color: #f2f5f6;
+  display: grid;
+  grid-template-rows:1fr 1fr;
+
+}
+#building-bridges .bridges-visual:nth-child(1){
+  order: 1;
+}
+
+#building-bridges .bridges-content:nth-child(2){
+  order: 0;
+}
+.bridges-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.bridge-color-title{
+  color:#92A7B0;
+
+}
+.report-btn{
+  display: flex;
+  align-items: center;
+  padding:1.5rem;
+  gap: .5rem;
+  width: 11rem;
+  height: 4rem;
+  font-size: 0.9rem;
+  border-radius: 12rem;
+  color: white;
+  border: none;
+  background-color: #043a53;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.report-btn img{
+  height: 2rem;
+  width: 2rem;
+}
+
+.bridges-visual {
+  position: relative;
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.bridges-visual img {
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
+  display: block;
+}
+
+.bridges-badge {
+  position: absolute;
+  background-color: #043a53;
+  bottom: .5rem;
+  right: -.25rem;
+  width: 11.5rem;
+  height: 11.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  border: .25rem solid white;
+  border-radius: 100%;
+  color: white;
+  box-shadow: 0 .25rem .6rem rgba(0, 0, 0, 0.1);
+}
+
+.bridges-badge img {
+  background-color: #F2F5F629;
+  padding: .7rem;
+  border-radius: 100%;
+  max-width: 3rem;
+  height: auto;
+}
 
 
 /* Desktop-First Brand Hero Section Styles */
