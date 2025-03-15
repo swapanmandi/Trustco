@@ -81,57 +81,58 @@ button:hover {
   background-color: darken(var(--primary-color), 10%);
 }
 
+/* Default Mobile-First */
+
+/* hero section styles */
+
 #hero {
   background-color: #f2f5f6;
+  padding: 0.5rem;
+  width: 100%;
+}
 
-  padding: 6.25rem 5rem;
-}
 .hero-container {
-  height: 21rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero-content {
-  width: 44rem;
-  display: flex;
-  justify-items: center;
   flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
   align-items: center;
   text-align: center;
-  padding-bottom: 6rem;
 }
+
+.hero-content {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.hero-content h1 span {
-  color: #043a53;
-}
 .hero-content p {
-  color: #12141d;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
+
 .hero-buttons {
   display: flex;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding: 1rem;
-  gap: 2rem;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #start-btn {
-  height: 2.8rem;
-  width: 8rem;
-  background-color: #043a53;
-  padding: 0.25rem 0.5rem;
-  font-size: medium;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
   border-radius: 1.25rem;
   color: white;
   border: none;
+  background-color: #043a53;
   cursor: pointer;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
@@ -144,7 +145,8 @@ button:hover {
 }
 
 #play-btn {
-  height: 3.5rem;
+  height: 3rem;
+  padding: 0 1rem;
   background-color: #f2f5f6;
   text-align: center;
   font-size: medium;
@@ -157,18 +159,162 @@ button:hover {
   border: none;
   border-radius: 1.25rem;
   cursor: pointer;
-  padding: 0 1.5rem;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
 
 #play-btn img {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 #play-btn:hover {
   background-color: #dde3e6;
   transform: translateY(-2px);
   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-hidden-hero-img {
+  display: none;
+}
+#mobile-visible-hero-img {
+  display: block;
+}
+
+.bottom-hero-img {
+  display: flex;
+}
+.bottom-hero-img img {
+  width: 50%;
+  height: 50%;
+}
+.bottom-hero-img img:first-child {
+  padding-bottom: 4rem;
+}
+.bottom-hero-img img:nth-child(2) {
+  padding-top: 3rem;
+}
+
+/* Medium Screens (Tablets: 600px - 1024px) */
+@media screen and (min-width: 600px) {
+  #hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero-container {
+    height: auto;
+  }
+
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  #start-btn {
+    width: 7rem;
+    height: 2.7rem;
+    font-size: 1rem;
+  }
+
+  #play-btn {
+    height: 3.2rem;
+    padding: 0 1.2rem;
+  }
+
+  #play-btn img {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+
+  #mobile-hidden-hero-img {
+    display: none;
+  }
+  #mobile-visible-hero-img {
+    display: block;
+  }
+  .bottom-hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Large Screens (Desktops: 1024px and above) */
+@media screen and (min-width: 1024px) {
+  #hero {
+    height: 100vh;
+    padding: 5rem;
+  }
+
+  .hero-container {
+    height: 21rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-content {
+    height: 100%;
+    width: 44rem;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h1 span {
+    color: #043a53;
+  }
+
+  .hero-content p {
+    color: #12141d;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .hero-buttons {
+    gap: 2rem;
+  }
+
+  #start-btn {
+    height: 2.8rem;
+    width: 8rem;
+    font-size: 1.1rem;
+  }
+
+  #play-btn {
+    height: 3.5rem;
+    padding: 0 1.5rem;
+  }
+
+  #play-btn img {
+    height: 2rem;
+    width: 2rem;
+  }
+  #mobile-visible-hero-img {
+    display: none;
+  }
+  #mobile-hidden-hero-img {
+    display: block;
+  }
 }
