@@ -960,7 +960,7 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 5rem;
+  padding: 2rem 1rem;
   background-color: #f2f5f6;
 }
 
@@ -984,7 +984,7 @@ blockquote {
   color: black;
   padding: 1.5rem;
   border-radius: 10px;
-  width: 250px;
+  width: 22rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -1026,14 +1026,14 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 8rem;
-background-color: #f2f5f6;
+  padding: 2rem 1rem;
+  background-color: #f2f5f6;
 }
 
 form {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin: auto;
   background: #fff;
@@ -1041,11 +1041,10 @@ form {
   margin-top: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
- 
 }
 .message-container {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
 }
 .form-group {
   margin-bottom: 15px;
@@ -1053,10 +1052,10 @@ form {
   border: 1px solid #ccc;
   display: flex;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 1rem;
 }
-.form-group img{
+.form-group img {
   width: 2rem;
   height: 2rem;
 }
@@ -1065,39 +1064,38 @@ input,
 textarea {
   width: 100%;
   padding: 10px;
- border: none;
+  border: none;
   border-radius: 5px;
   font-size: 1rem;
   outline: none;
-  
 }
 
 textarea {
   resize: vertical;
 }
 
-.form-group-last-item{
-  grid-column-start: 1;
-  grid-column-end: 3;
+.form-group-last-item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 
 /* styling for term checkbox */
- .checkbox-group {
+.checkbox-group {
   border: none;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   margin: 0;
   padding: 0;
 }
 
- .checkbox-group label {
-background-color: #dde3e6;
+.checkbox-group label {
+  background-color: #dde3e6;
   border-radius: 50%;
   cursor: pointer;
   height: 2rem;
@@ -1105,19 +1103,19 @@ background-color: #dde3e6;
   margin: 0;
   margin-right: 1rem;
 }
-.checkbox-group a{
+.checkbox-group a {
   color: black;
   text-decoration: none;
   font-weight: 600;
 }
-.checkbox-group p{
+.checkbox-group p {
   margin: 0;
-  font-size:large;
+  font-size: large;
 }
-.checkbox-group a:hover{
+.checkbox-group a:hover {
   color: blue;
 }
- .checkbox-group label:after {
+.checkbox-group label:after {
   border: 2px solid black;
   border-top: none;
   border-right: none;
@@ -1131,30 +1129,28 @@ background-color: #dde3e6;
   width: 15px;
 }
 
- .checkbox-group input[type="checkbox"] {
+.checkbox-group input[type="checkbox"] {
   visibility: hidden;
   display: none;
   opacity: 0;
-
 }
 
- .checkbox-group input[type="checkbox"]:checked + label:after {
+.checkbox-group input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
 
 .submit-button {
   width: fit-content;
   height: fit-content;
- background-color: #043a53;
+  background-color: #043a53;
   color: white;
   padding: 1rem;
   font-size: 1rem;
   font-weight: bold;
   border: none;
   border-radius: 2rem;
-right: auto;
+  right: auto;
   cursor: pointer;
-
 }
 
 .submit-button:hover {
@@ -1392,6 +1388,31 @@ right: auto;
   .credits-links {
     display: flex;
     flex-direction: row;
+  }
+
+  #contact-options {
+    padding: 3rem 5rem;
+  }
+  .contact-card {
+    width: 16rem;
+  }
+  #contact-form {
+    padding: 3rem, 5rem;
+  }
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 2rem;
+  }
+  .message-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .form-group-last-item {
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
@@ -1827,5 +1848,19 @@ right: auto;
   .credits-links {
     display: flex;
     flex-direction: row;
+  }
+
+  #contact-options {
+    padding: 3rem 5rem;
+  }
+  .contact-card {
+    width: 16rem;
+  }
+  #contact-form {
+    padding: 3rem, 5rem;
+  }
+  form {
+    padding: 3rem 5rem;
+    width: 51rem;
   }
 }
