@@ -344,6 +344,77 @@ button:hover {
   height: 2.2rem;
 }
 
+
+#benefits {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+#benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #043a53;
+}
+
+
+.benefits-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 32rem;
+  margin: 0 auto;
+
+}
+.badge-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 0;
+}
+.badge {
+  color:white;
+  background-color: #043a53;
+  padding: .5rem 1rem;
+  width: fit-content;
+  border-radius: 12rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  }
+  
+
+.benefit-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 .25rem .6rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.benefit-card img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #043a53;
+}
+
+
+.benefit-card p {
+  font-size: 1rem;
+  color: black;
+}
+
+
+
 /* Desktop-First Brand Hero Section Styles */
 
 .brand-container {
