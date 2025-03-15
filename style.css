@@ -895,6 +895,63 @@ blockquote {
   color: #ffcc00;
 }
 
+/* Site Credits Section */
+#site-credits {
+  width: 100%;
+  background: #dde3e6;
+  color: black;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  align-items: center;
+  border-top: 0.1rem solid black;
+  font-size: 0.9rem;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#copyright {
+  font-size: 1rem;
+}
+.credits-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.credits-links a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.credits-links a:hover {
+  color: #ffcc00;
+}
+
+#language-select {
+  background: #dde3e6;
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.language-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.language-switcher {
+  display: flex;
+  justify-content: center;
+}
+.language-switcher img {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 /* Desktop-First Brand Hero Section Styles */
 
 .brand-container {
@@ -1122,6 +1179,10 @@ blockquote {
   }
   .blog-item-2 {
     font-size: 1rem;
+  }
+  .credits-links {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1548,5 +1609,9 @@ blockquote {
   }
   .footer-nav {
     padding: 0;
+  }
+  .credits-links {
+    display: flex;
+    flex-direction: row;
   }
 }
