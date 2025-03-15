@@ -346,7 +346,6 @@ button:hover {
 
 #benefits {
   padding: 3rem 2rem;
-  background-color: #f9f9f9;
 }
 
 .benefits-container {
@@ -953,4 +952,28 @@ button:hover {
     gap: 1rem;
     width: 12rem;
   }
+  #numbers {
+    width: 100%;
+    padding: 3rem 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+
+  .number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #043a53;
+    display: block;
+  }
+  
+  .number-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
 }
