@@ -780,6 +780,63 @@ blockquote {
   height: auto;
 }
 
+#cta-banner {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  text-align: center;
+  padding: 0rem 2rem;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#cta-banner img {
+  max-width: 45rem;
+  height: auto;
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2rem 0rem;
+}
+
+.cta-content p {
+  font-size: 1rem;
+  padding: 1.5rem;
+}
+
+.cta-button {
+  width: fit-content;
+  display: flex;
+  background: #ffcc00;
+  color: #333;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta-button:hover {
+  background: #ffdb4d;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+.cta-button img {
+  width: 1.5rem;
+  height: auto;
+}
+
 /* Desktop-First Brand Hero Section Styles */
 
 .brand-container {
@@ -1409,57 +1466,6 @@ blockquote {
   /* CTA Banner Section */
   #cta-banner {
     display: flex;
-    background: black;
-    text-align: center;
-    padding: 0rem 2rem;
-    color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  .cta-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  #cta-banner img {
-    max-width: 45rem;
-    height: auto;
-  }
-
-  .cta-content h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 2rem 0rem;
-  }
-
-  .cta-content p {
-    font-size: 1rem;
-    padding: 1.5rem;
-  }
-
-  .cta-button {
-    width: fit-content;
-    display: flex;
-    background: #ffcc00;
-    color: #333;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 1.5rem;
-    transition: all 0.3s ease-in-out;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .cta-button:hover {
-    background: #ffdb4d;
-    transform: scale(1.05);
-    text-decoration: none;
-  }
-  .cta-button img {
-    width: 1.5rem;
-    height: auto;
+    flex-direction: row;
   }
 }
