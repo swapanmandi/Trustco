@@ -463,6 +463,7 @@ button {
   display: grid;
   grid-template-rows: 1fr 1fr;
   padding-top: 3rem 0;
+  max-height: 60rem;
 }
 
 .bridges-content {
@@ -480,8 +481,8 @@ button {
   display: flex;
   align-items: center;
   padding: 1.5rem;
-  gap: 0.5rem;
-  width: 11rem;
+  gap: 2.5rem;
+  max-width: 14rem;
   height: 4rem;
   font-size: 0.9rem;
   border-radius: 12rem;
@@ -1419,7 +1420,10 @@ textarea {
     font-size: 1rem;
     color: black;
   }
-
+#building-bridges {
+  max-height: 72rem;
+  gap: 1rem;
+}
   .bridges-visual img {
     max-width: 100%;
     height: auto;
@@ -1743,7 +1747,8 @@ textarea {
   }
   .report-btn {
     gap: 1rem;
-    width: 12rem;
+    width: 100%;
+    max-width: 12rem;
   }
   #numbers {
     width: 100%;
